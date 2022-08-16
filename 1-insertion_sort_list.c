@@ -52,7 +52,7 @@ void swap_list(listint_t *pn, listint_t *temp, listint_t *nn, listint_t **h)
 			(pn->prev)->next = temp;
 		pn->prev = temp;
 		pn->next = nn;
-		next = pn;
+		nn = pn;
 		pn = temp->prev;
 		if ((*h)->prev)
 			*h = (*h)->prev;
