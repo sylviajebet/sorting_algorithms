@@ -11,38 +11,26 @@
 
 void selection_sort(int *array, size_t size)
 {
-	size_t i, j, min;
+	unsigned int i, j, min;
+	int temp;
 
-	for (i = 0; i <= size; i++)
+	for (i = 0; i < size - 1; i++)
 	{
-		min = i; /*First element is min*/
+		min = i;
 		for (j = i + 1; j < size; j++)
 		{
 			if (array[j] < array[min])
+			{
 				min = j;
+			}
 		}
+
 		if (min != i)
 		{
-			swap_int(array, i, min);
-			print_array(array, size);
+			temp = array[i];
+			array[i] = array[min];
+			array[min] = temp;
+			print_array((const int *)array, size);
 		}
 	}
-
-}
-
-/**
- * swap_int - Swaps variable values
- *
- * @array: Pointer to array
- * @a: Index 1
- * @b: Index 2
-*/
-
-void swap_int(int *array, size_t a, size_t b)
-{
-	int temp;
-
-	temp = array[a];
-	array[a] = array[b];
-	array[b] = temp;
 }
