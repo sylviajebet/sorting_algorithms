@@ -50,11 +50,11 @@ size_t partition(int *array, size_t size, int start, int end)
 		if (array[j] < pivot)
 		{
 			i++;
-			swap_int1(array, i, j);
+			swap_int(array, i, j);
 			print_array(array, size);
 		}
 	}
-	swap_int1(array, i + 1, end);
+	swap_int(array, i + 1, end);
 	print_array(array, size);
 	return (i + 1);
 }

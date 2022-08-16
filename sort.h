@@ -25,4 +25,5 @@ void quick_sort(int *array, size_t size);
 
 void recursive_quick_sort(int *array, size_t size, int start, int end);
 size_t partition(int *array, size_t size, int start, int end);
+
 #endif
