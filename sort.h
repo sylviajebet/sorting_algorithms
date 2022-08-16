@@ -22,6 +22,7 @@ void bubble_sort(int *array, size_t size);
 void swap_int(int *arr, int a, int b);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
+void shell_sort(int *array, size_t size);
 
 void recursive_quick_sort(int *array, size_t size, int start, int end);
 size_t partition(int *array, size_t size, int start, int end);
