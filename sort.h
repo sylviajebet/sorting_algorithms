@@ -23,6 +23,8 @@ void swap_int(int *arr, int a, int b);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
+void swap_list(listint_t *pn, listint_t *temp, listint_t *nn, listint_t **h);
+void insertion_sort_list(listint_t **list);
 
 void recursive_quick_sort(int *array, size_t size, int start, int end);
 size_t partition(int *array, size_t size, int start, int end);
